@@ -2,5 +2,21 @@
 // @import 'normalize-css/normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-blue: #4292e4;
+
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'grid';
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+
+}
+
+.dropdown__list {
+  display: none;
+}

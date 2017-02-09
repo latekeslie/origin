@@ -1,0 +1,12 @@
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid__item {
+  border: 0.25rem solid $c-blue;
+
+}
