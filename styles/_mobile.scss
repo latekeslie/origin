@@ -1,8 +1,54 @@
 
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 770px) {
+
+  .grid {
+    flex-direction: column;
+    border: 0;
+
+    &__item {
+
+    }
+  }
+
   .shop-card {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    &__pic {
+      width: 33%;
+
+    }
+
+    &__info {
+      text-align: center;
+      margin: 2rem;
+    }
+
+  }
+
+  .dropdown {
+    &__list {
+      left: auto;
+      right: 100%;
+      bottom: 50%;
+      flex-direction: row;
+
+    }
   }
 
 
+  .button-bar {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    border: 0;
+    //border-right:  0.15rem solid $c-blue;
+    //border-left: 0.15rem solid $c-blue;
+
+    > * + * {
+      border-left: 0;
+    }
+}
 }

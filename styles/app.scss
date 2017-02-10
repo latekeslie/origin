@@ -4,13 +4,14 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $c-blue: #3473b5;
 $c-pink: #e577aa;
-$c-blue: #72bbe9;
+$c-lightblue: #72bbe9;
 $c-green: #7abe93;
 $c-yellow: #e5b178;
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'grid';
-@import 'mobile';
+
+img
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ $c-yellow: #e5b178;
 
 body {
   margin: 0;
-  color: $c-blue;
+  color: $c-lightblue;
   font-family: sans-serif;
 }
 
@@ -36,7 +37,7 @@ ul {
 .button-bar {
   display: flex;
   height: 2rem;
-  border-top: 0.15rem solid $c-blue;
+  background: $c-yellow;
 
   &__button {
     flex-grow: 1;
@@ -124,3 +125,5 @@ ul {
 .dropdown:hover .dropdown__list {
   display: flex;
 }
+
+@import 'mobile';
