@@ -1,0 +1,35 @@
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.grid__item {
+  flex-basis: calc(100% / 3 - 2rem);
+  flex-grow: 1;
+  // max-width: 50%;
+  margin: 1rem;
+  border: 0.15rem solid $c-blue;
+
+
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+
+  &__pic {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    align-self: center;
+  }
+
+  &__info {
+    text-align: center;
+  }
+}

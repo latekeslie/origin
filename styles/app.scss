@@ -2,5 +2,134 @@
 // @import 'normalize-css/normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-blue: #3473b5;
+$c-pink: #e577aa;
+$c-lightblue: #72bbe9;
+$c-green: #7abe93;
+$c-yellow: #e5b178;
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'grid';
+
+img {
+  align-self: center;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  color: $c-lightblue;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+
+}
+
+.button-bar {
+  display: flex;
+  height: 2rem;
+  border-top: 0.15rem solid $c-blue;
+
+  > * + * {
+    border-left: 0.15rem solid $c-blue;
+  }
+
+  &__button {
+    flex-grow: 1;
+    border: 0;
+    background: none;
+    color: $c-blue;
+
+    &:hover {
+      background-color: $c-blue;
+      color: white;
+    }
+  }
+
+  > * + * {
+    border-left: 0.15rem solid $c-blue;
+  }
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  background: #fff;
+  transform: translate(-50%, 0);
+  margin: 0;
+  border: 0.15rem solid $c-blue;
+  color: $c-blue;
+
+  > * + * {
+    border-top: 0.15rem solid $c-blue;
+  }
+
+  display: none;
+}
+
+.dropdown__button {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.dropdown__button--pink {
+  color: $c-pink;
+
+  :hover {
+    font-size: 2rem;
+  }
+}
+
+.dropdown__button--green {
+  color: $c-green;
+
+  :hover {
+    font-size: 1.5rem;
+  }
+}
+
+.dropdown__button--blue {
+  color: $c-blue;
+
+  :hover {
+    font-size: 1.5rem;
+  }
+}
+
+.dropdown__button--yellow {
+  color: $c-yellow;
+
+
+  :hover {
+    font-size: 1.5rem;
+  }
+}
+
+.size:hover {
+  font-size: 1.5rem;
+}
+
+.dropdown:hover .dropdown__list {
+  display: flex;
+}
+
+@import 'mobile';
